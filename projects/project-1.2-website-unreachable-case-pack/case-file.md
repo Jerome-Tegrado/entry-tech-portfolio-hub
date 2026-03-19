@@ -28,11 +28,11 @@ Website appears unreachable from my environment.
 **Result:** The trace reached the destination IP address successfully in 10 hops.  
 **Interpretation:** Network path connectivity is working. One intermediate timeout appeared, but the destination was still reached, so there is no confirmed route/path failure.
 
-## Conclusion
-Based on the DNS, HTTP, and route/path checks, the issue could not be reproduced during testing. The domain resolved successfully, the site returned `200 OK`, and the route trace reached the destination. There is no current evidence of an active DNS, HTTP, or network path problem.
+## Diagnosis
+There is no evidence of an active DNS, HTTP, or route/path failure during testing. The reported issue could not be reproduced from the test environment at the time of validation.
 
 ## Next Action
 Monitor for recurrence and repeat the checks if the issue happens again. If the problem reappears, retest from the affected machine or network to determine whether the issue is intermittent or environment-specific.
 
-## Diagnosis
-There is no evidence of an active DNS, HTTP, or route/path failure during testing. The reported issue could not be reproduced from the test environment at the time of validation.
+## Conclusion
+Based on the DNS, HTTP, and route/path checks, the issue could not be reproduced during testing. The domain resolved successfully, the site returned `200 OK`, and the route trace reached the destination. There is no current evidence of an active DNS, HTTP, or network path problem.
