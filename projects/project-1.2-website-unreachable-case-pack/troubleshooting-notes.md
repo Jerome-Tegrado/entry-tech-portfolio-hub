@@ -30,13 +30,10 @@ The site was tested from the local environment using browser and terminal-based 
 - One intermediate timeout appeared during `tracert`, but the final destination was still reached.
 
 ## Diagnosis
-There is no evidence of an active DNS, HTTP, or route/path failure during testing.
-
-## Conclusion
-The reported issue could not be reproduced in the test environment at the time of validation.
+No active DNS, HTTP, or network path issue was identified during testing. The issue was not reproducible at the time of validation.
 
 ## Next Action
 Monitor for recurrence and repeat the same checks if the issue appears again. If it reoccurs, retest from the affected machine or network to determine whether the issue is intermittent or environment-specific.
 
-## Diagnosis
-No active DNS, HTTP, or network path issue was identified during testing. The issue was not reproducible at the time of validation.
+## Conclusion
+The reported issue could not be reproduced in the test environment at the time of validation.
