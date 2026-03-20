@@ -1,4 +1,4 @@
-# Troubleshooting Notes — Project 1.2
+# Troubleshooting Notes — Project 1
 
 ## Issue Observed
 The website `example.com` was treated as a reported unreachable site for troubleshooting validation.

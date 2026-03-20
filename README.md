@@ -18,7 +18,7 @@ It is designed to show practical, job-relevant work for roles such as:
 - `start-here/`
   - `project-index.md`: roadmap and project status tracker
 - `projects/`
-  - `project-1.2-website-unreachable-case-pack/`
+  - `project1-website-unreachable-case-pack/`
     - `case-file.md`
     - `runbook.md`
     - `troubleshooting-notes.md`
@@ -33,12 +33,10 @@ It is designed to show practical, job-relevant work for roles such as:
 
 ## Current Status
 
-- Portfolio stage: Foundation + Fast Wins
-- Completed:
-  - Project 1.1 - Portfolio Hub Setup
-  - Project 1.2 - Website Unreachable Case Pack
-- Next up:
-  - Project 1.3 - Azure Setup + Cleanup Proof
+- Current phase: Phase 1 - Foundation and Existing Progress Consolidation
+- Completed starting point: Portfolio Hub Setup
+- Completed project: Phase 1, Project 1 - Website Unreachable Case Pack
+- Next up: Phase 1, Project 2 - Azure Setup + Cleanup Proof
 
 ## Working Principles
 
@@ -51,9 +49,10 @@ It is designed to show practical, job-relevant work for roles such as:
 
 Start here:
 - `start-here/project-index.md`
-- `projects/project-1.2-website-unreachable-case-pack/`
+- `projects/project1-website-unreachable-case-pack/`
 - `templates/`
 
 ## Notes
 
 This is an active portfolio repository and will be updated as new case packs and cloud support projects are completed.
+

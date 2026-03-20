@@ -1,4 +1,4 @@
-# Project 1.2 — Website Unreachable Case Pack
+# Project 1 — Website Unreachable Case Pack
 
 ## Issue
 Website appears unreachable from my environment.
