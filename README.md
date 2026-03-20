@@ -1,58 +1,81 @@
 # Entry Tech Portfolio Hub
 
-A proof-first, project-first portfolio hub for entry-level cloud and technical support roles.
+Proof-first portfolio projects for entry-level cloud and technical support roles.
 
-## Repository Purpose
+## What This Repo Shows
 
-This repository is a central place for hands-on case packs, support runbooks, evidence files, and reusable templates.
+This repository demonstrates practical troubleshooting work, clear documentation, and recruiter-friendly evidence packaging.
 
-It is designed to show practical, job-relevant work for roles such as:
-- IT Support (Cloud-Leaning)
-- Technical Support Specialist / Technical Support Engineer
+Target roles:
+- IT Support (cloud-leaning)
+- Technical Support Specialist / Engineer
 - Cloud Support Associate / Junior Cloud Support
 - Microsoft 365 / Entra ID Administrator
 - Access / Identity Support
 
-## Current Repository Structure
+## Start Here
 
-- `start-here/`
-  - `project-index.md`: roadmap and project status tracker
-- `projects/`
-  - `project1-website-unreachable-case-pack/`
-    - `case-file.md`
-    - `runbook.md`
-    - `troubleshooting-notes.md`
-    - `resume-bullet.md`
-    - `evidence/` (screenshots and outputs)
-    - `diagrams/` (visual architecture/flow)
-    - `supporting-materials/` (contextual learning proof)
-- `templates/`
-  - `case-file-template.md`
-  - `runbook-template.md`
-  - `troubleshooting-notes-template.md`
+- Project roadmap: [`start-here/project-index.md`](start-here/project-index.md)
+- Featured case pack: [`projects/project1-website-unreachable-case-pack/`](projects/project1-website-unreachable-case-pack/)
+- Reusable templates: [`templates/`](templates/)
+
+## Featured Project
+
+### Website Unreachable Case Pack
+
+Evidence-backed troubleshooting walkthrough that includes:
+- Case file and incident context
+- Runbook and step-by-step diagnostic flow
+- Troubleshooting notes with command outputs
+- Resume-ready impact summary
+- Screenshots, diagrams, and supporting materials
+
+Project folder:
+[`projects/project1-website-unreachable-case-pack/`](projects/project1-website-unreachable-case-pack/)
+
+## Repository Layout
+
+```text
+entry-tech-portfolio-hub/
+|-- start-here/
+|   `-- project-index.md
+|-- projects/
+|   `-- project1-website-unreachable-case-pack/
+|       |-- case-file.md
+|       |-- runbook.md
+|       |-- troubleshooting-notes.md
+|       |-- resume-bullet.md
+|       |-- evidence/
+|       |-- diagrams/
+|       `-- supporting-materials/
+|-- templates/
+|   |-- case-file-template.md
+|   |-- runbook-template.md
+|   `-- troubleshooting-notes-template.md
+`-- README.md
+```
 
 ## Current Status
 
-- Current phase: Phase 1 - Foundation and Existing Progress Consolidation
-- Completed starting point: Portfolio Hub Setup
-- Completed project: Phase 1, Project 1 - Website Unreachable Case Pack
-- Next up: Phase 1, Project 2 - Azure Setup + Cleanup Proof
+- Phase: Phase 1 - Foundation and Existing Progress Consolidation
+- Completed: Portfolio hub setup
+- Completed: Project 1 - Website Unreachable Case Pack
+- Next: Project 2 - Azure Setup + Cleanup Proof
 
-## Working Principles
+## Design Principles
 
-- No filler projects: each project should be portfolio-, resume-, and interview-worthy.
-- Output over theory: every project should include artifacts, evidence, and role relevance.
-- Small but strong: scoped to finish quickly, but documented to professional standards.
-- Real support workflow: troubleshoot, document, summarize, and package for recruiter readability.
+- No filler work: every project should be resume- and interview-ready.
+- Evidence over claims: outputs, screenshots, and artifacts are required.
+- Small scope, strong finish: concise projects documented to professional standards.
+- Real support flow: diagnose, document, summarize, and package clearly.
 
-## Navigation
+## How To Use This Repo
 
-Start here:
-- `start-here/project-index.md`
-- `projects/project1-website-unreachable-case-pack/`
-- `templates/`
+1. Open the roadmap in `start-here/project-index.md`.
+2. Review completed case packs under `projects/`.
+3. Use `templates/` to create your own project in the same format.
+4. Add evidence and a resume bullet for each completed case.
 
-## Notes
+---
 
-This is an active portfolio repository and will be updated as new case packs and cloud support projects are completed.
-
+This is an active portfolio repository and will continue to grow with new support and cloud case packs.
