@@ -73,9 +73,3 @@
   - Leaving cloud resources deployed may create unnecessary cost
   - Mitigation:
     - Use only a minimal setup and delete the resource group after proof and documentation are completed
-
-## Final Status
-- Setup completed (Yes/No): Yes
-- Completion notes:
-  - Resource group and storage account were created successfully.
-  - Setup evidence was captured and stored in the project evidence folder.

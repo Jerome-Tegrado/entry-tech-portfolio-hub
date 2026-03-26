@@ -1,61 +1,74 @@
 # Summary
 
 ## Project Information
-- Project Name: Azure Setup + Cleanup Proof
-- Project ID: Phase 1 Project 2
-- Date: 2026-03-20
+- Project Name: NSG Blocking Lab
+- Project ID: Phase 2 Project 1
+- Date: March 26, 2026
 
 ## Objective
-The goal of this activity was to perform a simple Azure resource setup and cleanup task as beginner cloud proof. The project focused on creating a resource group and storage account, validating that the deployment worked, capturing evidence, and then removing the resources responsibly.
+The goal of this activity was to build a simple Azure networking lab that demonstrates how a Network Security Group can control VM connectivity at the subnet level. The lab aimed to prove a clean before, fail, and restore flow by first allowing SSH access, then blocking it with a deny rule, and finally restoring access by removing that rule.
 
 ## Scope
 - In Scope:
-  - Create one Azure resource group
-  - Use Azure Cloud Shell
-  - Create one Azure Storage Account
-  - Capture setup evidence
-  - Delete the resource group and included resource
-  - Capture cleanup evidence
-  - Document setup and cleanup actions
+  - Create a resource group, virtual network, subnet, network security group, public IP, and virtual machine
+  - Associate the NSG to the subnet
+  - Test SSH access to the Ubuntu VM
+  - Add and remove NSG rules to prove access control behavior
+  - Capture screenshots as evidence
+  - Clean up lab resources after completion
 - Out of Scope:
-  - Advanced Azure networking
-  - IAM or role configuration changes
-  - Monitoring, alerting, or logging setup
-  - Production workload deployment
-  - Multi-resource architecture
+  - Application Security Groups
+  - Multi-VM architecture
+  - NIC-level NSG as the main filtering design
+  - Load balancers, Bastion, or DDoS protection
+  - Production-grade hardening and long-term security design
 
 ## Environment
 - Platform/Cloud: Microsoft Azure
 - Region: Southeast Asia
-- Account/Subscription (non-sensitive): Azure subscription 1
-- Tools Used: Azure Portal, Azure Cloud Shell, Azure CLI, Resource Groups, Storage Account
+- Account/Subscription (non-sensitive): Personal Azure subscription
+- Tools Used:
+  - Azure Portal
+  - Windows PowerShell
+  - SSH client
 
 ## Work Completed
-1. Created the resource group `rg-project2-azure-setup` in Azure.
-2. Used Azure Cloud Shell and created the storage account `storageproject02`.
-3. Captured setup evidence, removed the resource group, and verified cleanup completion.
+1. Created the core lab resources, including the resource group, VNet, subnet, NSG, public IP, and Ubuntu virtual machine.
+2. Configured subnet-level NSG behavior by adding an allow SSH rule for baseline testing, then modifying rule priority and adding a deny SSH rule for blocking validation.
+3. Validated the full connectivity flow by confirming SSH success before blocking, SSH failure during deny enforcement, and SSH success again after removing the deny rule.
 
 ## Key Results
-- Successfully created and validated a resource group and storage account in Azure.
-- Captured proof of both setup and cleanup for project documentation.
-- Completed the activity with cleanup discipline to avoid leaving unused cloud resources running.
+- Successfully deployed a working Azure VM inside `vnet-p2p1` and `subnet-workload`
+- Confirmed that subnet-level NSG rules directly affected inbound SSH connectivity to the VM
+- Proved the full access-control flow: baseline success, intentional failure, and restored success
 
 ## Evidence
 - Screenshot(s):
-  - `evidence/Resource_Group.png`
-  - `evidence/Storage_Account_Overview.png`
-  - `evidence/Pre-Deletion.png`
-  - `evidence/Deleted.png`
+  - VM creation and configuration
+  - Networking tab showing `vnet-p2p1` and `subnet-workload`
+  - Allow SSH rule
+  - Baseline SSH success
+  - Deny SSH rule
+  - SSH timeout after deny rule
+  - Final SSH success after removing deny rule
 - Command output(s):
-  - `az group list --output table`
+  - `ssh jerome@135.171.176.24`
 - Diagram(s):
-  - None
+  - In Progress
 
 ## Issues Encountered
-- Issue: No major issue encountered during setup or cleanup
-  - Resolution: Not applicable
+- Issue:
+  - Initial SSH test timed out before baseline validation
+  - Resolution:
+    - Added an `allow-ssh` inbound NSG rule so SSH traffic could reach the VM for baseline testing
+- Issue:
+  - Deny rule could not override the allow rule when both priorities conflicted
+  - Resolution:
+    - Edited `allow-ssh` from priority `100` to `110`, then created `deny-ssh` at priority `100` so the deny rule would take precedence
 
 ## Lessons Learned
-- A resource group acts as a logical container that helps organize and manage related Azure resources.
-- The Storage Account Overview page is stronger proof of successful deployment than only pre-creation or review screens.
-- Cleanup is an important part of cloud work because it shows cost awareness and responsible resource handling.
+- A VM is placed into a VNet and subnet through its NIC, which is automatically created and attached during VM creation
+- A public IP is different from the subnet placement; it provides internet-facing access but does not place the VM into the VNet
+- NSG priority order matters because lower numbers are processed first
+- Subnet-level NSG is a clean and beginner-friendly way to demonstrate traffic filtering in Azure
+- Baseline connectivity should always be confirmed first before testing an intentional failure scenario

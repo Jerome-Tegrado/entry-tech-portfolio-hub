@@ -39,8 +39,3 @@ Describe the goal of the activity in 1-3 sentences.
 
 ## Lessons Learned
 - 
-
-## Next Steps
-1.
-2.
-3.

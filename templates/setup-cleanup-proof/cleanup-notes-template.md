@@ -39,4 +39,4 @@ Summarize why the resources or changes are being removed.
 
 ## Final Status
 - Cleanup completed (Yes/No):
-- Remaining items:
+

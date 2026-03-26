@@ -43,6 +43,3 @@ The resources were removed after successful setup, validation, and evidence capt
 
 ## Final Status
 - Cleanup completed (Yes/No): Yes
-- Completion notes:
-  - Target resource group and included storage account were fully deleted.
-  - Cleanup evidence was captured and stored in the project evidence folder.
