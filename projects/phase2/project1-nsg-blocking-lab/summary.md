@@ -54,7 +54,7 @@ The goal of this activity was to build a simple Azure networking lab that demons
 - Command output(s):
   - `ssh jerome@135.171.176.24`
 - Diagram(s):
-  - In Progress
+  - Accomplished 
 
 ## Issues Encountered
 - Issue:
