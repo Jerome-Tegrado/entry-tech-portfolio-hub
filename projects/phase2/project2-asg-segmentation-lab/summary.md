@@ -2,7 +2,7 @@
 
 ## Project Information
 - Project Name: ASG Segmentation Lab
-- Project ID: Phase 2 — Project 2
+- Project ID: Phase 2 Project 2
 - Date: March 29, 2026
 
 ## Objective
